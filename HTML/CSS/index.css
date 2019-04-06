@@ -98,6 +98,17 @@ ul.dropdown-menu-right {
   width: 300px;
 }
 
-nav.second-navbar {
-    background-color: #022c43;
-}
+    ul.dropdown-lr {
+      width: 300px;
+    }
+    
+    /* mobile fix */
+    @media (max-width: 768px) {
+        .dropdown-lr h3 {
+            color: #eee;
+        }
+        .dropdown-lr label {
+            color: #eee;
+        }
+    }
+    

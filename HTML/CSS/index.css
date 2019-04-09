@@ -1,5 +1,9 @@
 body{
-    background-color:#022c43;
+    background-color:#053f5e;
+}
+
+footer{
+ background-color: #ffd700;
 }
 
 h1 { 
@@ -42,3 +46,75 @@ pre { font-family: Lato;
     font-weight: 400; 
     line-height: 18.5714px;
 }
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+
+a.search_icon, a.search_icon:hover {
+    text-decoration: none;
+}
+
+ul.dropdown-menu-right {
+  width: 300px;
+}
+
+    ul.dropdown-lr {
+      width: 300px;
+    }
+    
+    /* mobile fix */
+    @media (max-width: 768px) {
+        .dropdown-lr h3 {
+            color: #eee;
+        }
+        .dropdown-lr label {
+            color: #eee;
+        }
+    }
+    
+    footer{
+        background-color: #ffd700;
+        text-align: center;
+        padding: 15px ;
+    }
+    
